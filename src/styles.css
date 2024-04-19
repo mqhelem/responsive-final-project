@@ -1,6 +1,10 @@
 :root {
   --primary-color: #42b883;
   --secondary-color: #ff7e67;
+  --tertiary-color: #22313f;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --text-color: #35495e;
 }
 nav {
   margin: 0 30px;
@@ -8,16 +12,51 @@ nav {
 .nav-link {
   margin-right: 40px;
 }
+body {
+  color: var(--text-color);
+}
+.hero {
+  text-align: center;
+  margin: 10px auto;
+  background-color: #42b883;
+  padding: 80px 0;
+  line-height: 2;
+}
+hero h2 {
+  font-family: var(--default-font);
+}
+h1 {
+  font-size: 96px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 700px;
+}
+.intro {
+  font-family: var(--default-font);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--tertiary-color);
+}
+.btn-branding {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px var(--tertiary-color);
+}
+
 /* mobile devices */
 @media (max-width: 576px) {
   nav img {
     height: 18px;
   }
 }
-.hero {
-  text-align: center;
-  margin: 0 auto;
-  background-color: #42b883;
-  padding: 80px 0;
-}
-/* footer */

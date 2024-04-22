@@ -154,6 +154,9 @@ footer {
   body {
     text-align: center;
   }
+  .top-space {
+    margin-top: 10px;
+  }
   .hero {
     padding: 20px 0;
   }
@@ -166,7 +169,7 @@ footer {
     font-size: 18px;
   }
   h3,
-  .hero h2,
+  h4 .hero h2,
   .feature,
   footer p,
   .email,
@@ -183,7 +186,14 @@ footer {
   .project-img {
     height: 200px;
   }
+  .about-img {
+    height: 250px;
+    margin-top: 50px;
+  }
   .project-content h2 {
     padding-top: 15px;
+  }
+  footer {
+    margin-top: 50px;
   }
 }

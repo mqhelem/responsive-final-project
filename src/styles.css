@@ -78,6 +78,10 @@ h6 {
 h4 {
   font-family: var(--default-font);
 }
+h5 {
+  font-size: 24px;
+  line-height: 36px;
+}
 .intro {
   font-family: var(--default-font);
   font-size: 36px;
@@ -106,8 +110,13 @@ h4 {
   height: 300px;
   border-radius: 25px;
 }
+.works-img {
+  height: 350px;
+  border-radius: 30px;
+}
 .project-img,
-.about-img {
+.about-img,
+.works-img {
   padding: 10px;
   border: var(--project-img-border);
 }
@@ -169,7 +178,8 @@ footer {
     font-size: 18px;
   }
   h3,
-  h4 .hero h2,
+  h4,
+  .hero h2,
   .feature,
   footer p,
   .email,

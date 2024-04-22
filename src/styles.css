@@ -1,32 +1,56 @@
 :root {
-  --primary-color: #42b883;
+  --primary-color: #b0e0e6;
   --secondary-color: #ff7e67;
   --tertiary-color: #22313f;
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
   --text-color: #35495e;
+  --project-img-border: 3px solid var(--primary-color);
 }
+
 nav {
-  margin: 0 30px;
+  background-color: var(--secondary-color);
 }
 .nav-link {
-  margin-right: 40px;
+  padding-right: 40px;
 }
 body {
   color: var(--text-color);
+  font-size: 16px;
+}
+.feature,
+footer p {
+  font-size: 18px;
+  line-height: 27px;
 }
 .hero {
   text-align: center;
-  margin: 10px auto;
-  background-color: #42b883;
+  margin: 0 auto;
+  background-color: var(--primary-color);
   padding: 80px 0;
   line-height: 2;
 }
-hero h2 {
+.hero h2 {
   font-family: var(--default-font);
 }
+.hero h2,
+.email,
+.home-icons {
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
 h1 {
   font-size: 96px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 48px;
 }
 h1,
 h2,
@@ -36,12 +60,14 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 700px;
+  color: var(--tertiary-color);
 }
 .intro {
   font-family: var(--default-font);
   font-size: 36px;
   font-weight: 700;
   color: var(--tertiary-color);
+  margin-bottom: 0;
 }
 .btn-branding {
   background-color: var(--secondary-color);
@@ -53,10 +79,71 @@ h6 {
   border-radius: 4px;
   box-shadow: 3px 3px 3px var(--tertiary-color);
 }
+.btn-branding:hover {
+  background-color: var(--primary-color);
+}
 
+.project-img {
+  height: 300px;
+  border-radius: 25px;
+  padding: 10px;
+  border: var(--project-img-border);
+}
+hr {
+  height: 1px;
+  margin-top: 30px;
+  background: var(--secondary-color);
+  border: none;
+}
+.enquiry {
+  margin: 50px 0;
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: 20px;
+}
+.home-icons {
+  padding: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin: 10px;
+}
+.coder p {
+  background-color: var(--tertiary-color);
+  margin-bottom: 0;
+  padding: 20px;
+  color: white;
+}
 /* mobile devices */
 @media (max-width: 576px) {
   nav img {
     height: 18px;
+  }
+  body {
+    text-align: center;
+  }
+  .hero {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  h3,
+  .hero h2 {
+    font-size: 14px;
+  }
+  .feature,
+  footer p {
+    font-size: 14px;
+  }
+  .project-info {
+    font-size: 12px;
+  }
+  .bespoke {
+    padding-top: 50px;
   }
 }

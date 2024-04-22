@@ -131,17 +131,24 @@ hr {
     font-size: 18px;
   }
   h3,
-  .hero h2 {
-    font-size: 14px;
-  }
+  .hero h2,
   .feature,
-  footer p {
+  footer p,
+  .email,
+  .home-icons {
     font-size: 14px;
   }
+
   .project-info {
     font-size: 12px;
   }
   .bespoke {
     padding-top: 50px;
+  }
+  .project-img {
+    height: 200px;
+  }
+  .project-content h2 {
+    padding-top: 15px;
   }
 }

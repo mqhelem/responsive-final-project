@@ -193,7 +193,8 @@ footer {
   .bespoke {
     padding-top: 50px;
   }
-  .project-img {
+  .project-img,
+  .works-img {
     height: 200px;
   }
   .about-img {

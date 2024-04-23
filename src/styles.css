@@ -121,11 +121,25 @@ h5 {
   border: var(--project-img-border);
 }
 
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #000;
+  line-height: 30px;
+}
 .enquiry {
   margin: 50px 0;
   background-color: var(--primary-color);
   padding: 30px;
   border-radius: 20px;
+}
+.contact-socials {
+  font-size: 40px;
+  background-color: var(--primary-color);
+  padding: 13px;
+  border-radius: 50%;
 }
 .home-icons {
   padding: 12px;
